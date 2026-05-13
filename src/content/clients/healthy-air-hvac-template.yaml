@@ -21,12 +21,12 @@ yearFounded: 2010
 schemaDescription: "HealthyAirFL is a trusted HVAC company serving Naples, FL with fast, reliable heating and cooling services."
 
 # ── 2. Brand ─────────────────────────────────────────────
-# Primary brand color (used in header, buttons, hero overlay)
-colorPrimary: "#2563EB"
-# Slightly darker version of above (hover states)
-colorPrimaryDark: "#1D4ED8"
-# Accent / CTA button color — usually amber/orange/yellow
-colorAccent: "#F59E0B"
+# Primary brand color (Midnight Blue)
+colorPrimary: "#191970"
+# Structural color (Royal Blue)
+colorPrimaryDark: "#4169E1"
+# CTA color (Deep Pink)
+colorAccent: "#FF1493"
 
 # ── 3. Navigation ────────────────────────────────────────
 navCTA: "Get a Free Quote"

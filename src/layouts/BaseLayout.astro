@@ -105,13 +105,21 @@ if (schema.includes('HVACBusiness') || schema.includes('LocalBusiness')) {
     colorPrimary:     client.colorPrimary,
     colorPrimaryDark: client.colorPrimaryDark,
     colorAccent:      client.colorAccent,
-    colorText:        '#1A1A2E',
+    colorText:        '#2F4F4F',
+    colorBg:          '#F5F5F5',
+    colorSurface:     '#F5F5F5',
+    colorTextMuted:   '#696969',
+    colorBorder:      '#696969',
   }}>
     :root {
       --color-primary:      var(--colorPrimary);
       --color-primary-dark: var(--colorPrimaryDark);
       --color-accent:       var(--colorAccent);
       --color-text:         var(--colorText);
+      --color-bg:           var(--colorBg);
+      --color-surface:      var(--colorSurface);
+      --color-text-muted:   var(--colorTextMuted);
+      --color-border:       var(--colorBorder);
     }
   </style>
 
