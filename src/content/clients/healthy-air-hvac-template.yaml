@@ -10,10 +10,10 @@
 # ── 1. Business Info ─────────────────────────────────────
 businessName: "HealthyAirFL"
 phone: "(239) 270-0809"
-address: "123 Main Street"
-city: "Naples"
+address: "20300 Haskins Rd"
+city: "North Fort Myers"
 state: "FL"
-zip: "34102"
+zip: "33917"
 email: "info@healthyairfl.com"
 siteUrl: "https://healthyairfl.com"
 
@@ -58,8 +58,8 @@ team:
     image: "/_assets/ricardohealthyair.jpeg"
 
 # ── 5. Google / Reviews ──────────────────────────────────
-googleRating: 4.9
-googleReviewCount: 150
+googleRating: 5.0
+googleReviewCount: 60
 googlePlaceId: ""
 
 # ── 6. Social ────────────────────────────────────────────
