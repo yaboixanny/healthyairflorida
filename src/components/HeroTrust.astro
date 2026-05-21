@@ -133,7 +133,7 @@ const animatedHeadline = headline.replace(/\|/g, '<br>');
               </svg>
               Call {phone}
             </a>
-            <a href={navCtaUrl} class="hero-cta btn btn-ghost-white">
+            <a href="#cta-section" class="hero-cta btn btn-ghost-white">
               {navCTA}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -142,7 +142,7 @@ const animatedHeadline = headline.replace(/\|/g, '<br>');
           </>
         ) : (
           <>
-            <a href={navCtaUrl} class="hero-cta btn btn-accent">
+            <a href="#cta-section" class="hero-cta btn btn-accent">
               {navCTA}
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -656,3 +656,37 @@ const animatedHeadline = headline.replace(/\|/g, '<br>');
   .coupon-text :global(.coupon-highlight) { font-size: 1.35rem; }
 }
 </style>
+
+<script>
+  function scrollToTarget(el, offset = 0) {
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+
+  document.querySelectorAll('.hero-cta').forEach((cta) => {
+    cta.addEventListener('click', (e) => {
+      const sectionTarget = document.getElementById('cta-section')
+        || document.getElementById('contact-form-split')
+        || document.querySelector('.split-form-section')
+        || document.querySelector('.qualify-section');
+      const formTarget = document.getElementById('cta-form-top')
+        || document.querySelector('.hero-form-card .form-heading')
+        || document.querySelector('form.contact-form');
+
+      e.preventDefault();
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+      if (isMobile && formTarget) {
+        scrollToTarget(formTarget, 84);
+        return;
+      }
+      if (sectionTarget) {
+        scrollToTarget(sectionTarget, 88);
+        return;
+      }
+      if (formTarget) {
+        scrollToTarget(formTarget, 88);
+      }
+    });
+  });
+</script>
