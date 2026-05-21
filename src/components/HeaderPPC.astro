@@ -32,7 +32,7 @@ const { businessName, phone, navCTA, navCtaUrl, logoSrc } = Astro.props;
         </svg>
         <span class="ppc-phone-number">{phone}</span>
       </a>
-      <a href={navCtaUrl} class="ppc-cta">{navCTA}</a>
+      <a href="#cta-section" class="ppc-cta">{navCTA}</a>
     </div>
 
   </div>
@@ -165,9 +165,14 @@ const { businessName, phone, navCTA, navCtaUrl, logoSrc } = Astro.props;
   });
 
   ppcCta?.addEventListener('click', (e) => {
-    const sectionTarget = document.getElementById('cta-section');
-    const formTarget = document.getElementById('cta-form-top');
-    if (!sectionTarget && !formTarget) return;
+    // Prefer explicit quote section/form anchors, then fall back to any real form on page.
+    const sectionTarget = document.getElementById('cta-section')
+      || document.getElementById('contact-form-split')
+      || document.querySelector('.split-form-section')
+      || document.querySelector('.qualify-section');
+    const formTarget = document.getElementById('cta-form-top')
+      || document.querySelector('.hero-form-card .form-heading')
+      || document.querySelector('form.contact-form');
 
     e.preventDefault();
 
@@ -179,6 +184,11 @@ const { businessName, phone, navCTA, navCtaUrl, logoSrc } = Astro.props;
 
     if (sectionTarget) {
       scrollToTarget(sectionTarget, 88);
+      return;
+    }
+
+    if (formTarget) {
+      scrollToTarget(formTarget, 88);
     }
   });
 </script>
