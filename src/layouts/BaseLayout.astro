@@ -250,6 +250,13 @@ if (schema.includes('HVACBusiness') || schema.includes('LocalBusiness')) {
           formLocation: fields['contact-location'] || '',
           ...fields
         });
+        // Additional standard event name requested for GTM triggers
+        window.dataLayer.push({
+          event: 'form_submit',
+          formName: form.name,
+          formLocation: fields['contact-location'] || '',
+          ...fields
+        });
 
         // AJAX POST to Netlify — prevents full page reload
         fetch(window.location.href, {
@@ -263,7 +270,7 @@ if (schema.includes('HVACBusiness') || schema.includes('LocalBusiness')) {
             <div style="text-align:center;padding:2rem 1rem;">
               <div style="font-size:3rem;margin-bottom:0.75rem;">✅</div>
               <h3 style="font-family:var(--font-heading);font-size:1.5rem;font-weight:800;color:var(--color-text);margin-bottom:0.5rem;">Thank You!</h3>
-              <p style="font-size:1rem;color:var(--color-text-muted);line-height:1.6;margin-bottom:1rem;">We've received your information. A tech will be in touch shortly.</p>
+              <p style="font-size:1rem;color:var(--color-text-muted);line-height:1.6;margin-bottom:1rem;">We've received your information. We'll call in the next 5 minutes.</p>
               <p style="font-size:0.8rem;color:var(--color-text-muted);">🔒 Your information is secure and never shared.</p>
             </div>`;
         }).catch(() => form.submit()); // fallback: native submit if AJAX fails
@@ -277,6 +284,7 @@ if (schema.includes('HVACBusiness') || schema.includes('LocalBusiness')) {
         const data = {};
         new FormData(qualifyForm).forEach((val, key) => { data[key] = val; });
         window.dataLayer.push({ event: 'form_submission', formName: 'qualify-form', ...data });
+        window.dataLayer.push({ event: 'form_submit', formName: 'qualify-form', ...data });
       }, true);
     }
   </script>
