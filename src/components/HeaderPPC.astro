@@ -153,7 +153,32 @@ const { businessName, phone, navCTA, navCtaUrl, logoSrc } = Astro.props;
 
 <script>
   const ppcHeader = document.getElementById('ppc-header');
+  const ppcCta = document.querySelector('.ppc-cta');
+
+  function scrollToTarget(el, offset = 0) {
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
+  }
+
   window.addEventListener('scroll', () => {
     ppcHeader?.classList.toggle('is-scrolled', window.scrollY > 50);
+  });
+
+  ppcCta?.addEventListener('click', (e) => {
+    const sectionTarget = document.getElementById('cta-section');
+    const formTarget = document.getElementById('cta-form-top');
+    if (!sectionTarget && !formTarget) return;
+
+    e.preventDefault();
+
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    if (isMobile && formTarget) {
+      scrollToTarget(formTarget, 84);
+      return;
+    }
+
+    if (sectionTarget) {
+      scrollToTarget(sectionTarget, 88);
+    }
   });
 </script>
