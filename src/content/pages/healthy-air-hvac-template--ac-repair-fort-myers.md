@@ -44,5 +44,8 @@ faq:
     a: "Yes. We offer same-day service in Fort Myers whenever scheduling allows."
   - q: "What AC problems do you fix?"
     a: "We repair no-cool issues, poor airflow, refrigerant problems, leaks, electrical faults, and more."
+  - q: "Should I repair or replace my AC system?"
+    a: "That depends on the age of the system, the cost of repair, and its overall condition. We’ll give you honest guidance so you can make the best decision for your home."
+  - q: "Can you inspect strange noises or bad smells from my AC?"
+    a: "Yes. Unusual sounds or odors can point to electrical issues, airflow problems, or worn parts, and we can inspect the system to find the source."
 ---
-

@@ -15,8 +15,8 @@ heroTemplate: trust
 heroBg: "/_assets/healthyairfl2.jpg"
 heroHeadline: "Fast AC Repair in Naples, FL"
 heroSubheadline: "When your AC stops cooling, HealthyAirFL gets your comfort back fast with same-day service and honest, upfront pricing."
-promoStamp: "$79 A/C Diagnostic Special|Same-Day Service Available"
-couponExpiry: "Limited-time offer for Naples homeowners."
+promoStamp: "FREE|EMERGENCY SERVICE CALL"
+couponExpiry: "Diagnostic fee waived with any repair. First-time customers. Call to redeem."
 heroBullets:
   - "Same-day AC repair available"
   - "All major AC brands serviced"
@@ -49,4 +49,8 @@ faq:
     a: "Yes. We offer same-day AC repair service throughout Naples whenever scheduling allows."
   - q: "What AC issues do you repair?"
     a: "We repair common issues including AC not cooling, poor airflow, refrigerant problems, water leaks, unusual noises, and thermostat-related failures."
+  - q: "Can you fix an AC that keeps turning on and off?"
+    a: "Yes. Short cycling can be caused by thermostat issues, airflow restrictions, electrical problems, or system sizing concerns, and we can diagnose what’s behind it."
+  - q: "Do you work on high-efficiency AC systems?"
+    a: "Yes. We service both standard and high-efficiency residential air conditioning systems from all major brands."
 ---

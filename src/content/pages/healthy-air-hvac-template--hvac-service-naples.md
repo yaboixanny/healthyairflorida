@@ -50,4 +50,8 @@ faq:
     a: "We offer same-day HVAC service throughout Naples whenever scheduling allows."
   - q: "Do you handle both AC and heating systems?"
     a: "Yes. We service, repair, and install both cooling and heating systems for Naples homes."
+  - q: "Can you help improve airflow and uneven temperatures in my home?"
+    a: "Yes. Poor airflow and hot or cold spots can be related to filters, ductwork, blower issues, or system performance, and we can inspect the full setup."
+  - q: "Do you offer maintenance as well as repairs?"
+    a: "Yes. We provide ongoing HVAC service, tune-ups, diagnostics, and repairs to help keep systems running efficiently."
 ---

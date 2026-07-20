@@ -44,5 +44,8 @@ faq:
     a: "Yes. We service and repair all major residential AC brands."
   - q: "Do you provide upfront pricing?"
     a: "Yes. You’ll always approve pricing before repair work starts."
+  - q: "What are common signs I need AC repair?"
+    a: "Warm air, weak airflow, unusual noises, water leaks, short cycling, and higher utility bills can all be signs your system needs attention."
+  - q: "Can you help if my AC stops working after hours?"
+    a: "We offer fast-response scheduling and same-day availability whenever possible, so contact us as soon as you notice the problem."
 ---
-

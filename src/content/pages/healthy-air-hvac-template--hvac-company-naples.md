@@ -44,4 +44,8 @@ faq:
     a: "Yes. We offer same-day HVAC service whenever scheduling allows."
   - q: "Why choose HealthyAirFL?"
     a: "Homeowners choose us for quick response, transparent pricing, quality workmanship, and reliable local service."
+  - q: "Do you work on both heating and cooling systems?"
+    a: "Yes. We service and repair both air conditioning and heating equipment for homeowners throughout Naples."
+  - q: "Can your team help me decide whether to repair or replace my system?"
+    a: "Absolutely. We’ll assess your system’s condition, explain your options clearly, and help you choose the most practical path forward."
 ---

@@ -44,5 +44,8 @@ faq:
     a: "We offer fast-response service and same-day appointments whenever available."
   - q: "Can you repair older AC systems?"
     a: "Yes. We service both older and newer systems and provide honest repair-vs-replace guidance."
+  - q: "What if my AC is blowing warm air?"
+    a: "Warm air can be caused by thermostat issues, refrigerant problems, airflow restrictions, or failing components. We can diagnose the cause and recommend the right repair."
+  - q: "Do you service all major AC brands?"
+    a: "Yes. Our technicians work on all major residential air conditioning brands and system types."
 ---
-
