@@ -44,8 +44,5 @@ faq:
     a: "Most homes benefit from professional AC service at least once per year, ideally before peak summer use."
   - q: "Can AC service lower energy bills?"
     a: "Yes. Proper service can improve efficiency, reduce strain, and help control energy costs."
-  - q: "Is AC service different from AC repair?"
-    a: "Yes. Service usually focuses on inspection, cleaning, and performance optimization, while repair addresses a specific failure or malfunction."
-  - q: "Can regular AC service help extend system life?"
-    a: "Yes. Routine service can reduce wear, catch small issues earlier, and help your system run more reliably over time."
 ---
+
