@@ -48,4 +48,8 @@ faq:
     a: "We serve Naples, Bonita Springs, Estero, and surrounding communities."
   - q: "Are you licensed and insured?"
     a: "Yes. We are fully licensed, bonded, and insured for your protection."
+  - q: "Do you offer financing for larger HVAC projects?"
+    a: "Financing options may be available for qualifying system replacements or larger repairs. Contact us and we can walk you through current options."
+  - q: "Can you help with both repairs and full system replacements?"
+    a: "Yes. We handle diagnostics, repairs, maintenance, and complete HVAC system replacement based on what makes the most sense for your home."
 ---

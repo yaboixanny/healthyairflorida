@@ -31,4 +31,8 @@ faq:
     a: "Yes — we service and install all major brands including [Brand 1], [Brand 2], [Brand 3]."
   - q: "Are your technicians background-checked?"
     a: "Yes — all of our technicians are background-checked, licensed, and factory-trained."
+  - q: "Do you stand behind your work?"
+    a: "Yes. We take pride in quality workmanship and stand behind our repairs and installations with clear communication and dependable service."
+  - q: "Do you provide both residential service and system replacements?"
+    a: "Yes. We help homeowners with routine service, repairs, maintenance, and full system replacement when needed."
 ---

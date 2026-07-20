@@ -24,7 +24,7 @@ const defaultReviews: Review[] = [
   { name: 'Sarah M.', rating: 5, text: 'Called at 8am and they were at my door by 10. Fixed the furnace in under an hour. Incredibly professional and reasonably priced.', date: '2 weeks ago', source: 'google' },
   { name: 'Jason K.', rating: 5, text: 'Best HVAC company in the area. Fair pricing, showed up on time, and the technician actually explained what was wrong and why. Will never call anyone else.', date: '1 month ago', source: 'google' },
   { name: 'Lisa P.', rating: 5, text: 'Our AC went out on the hottest day of the summer and they had it fixed quickly. Professional, courteous, and reasonably priced. Cannot recommend enough!', date: '3 weeks ago', source: 'google' },
-  { name: 'Mike R.', rating: 5, text: 'Got three quotes for a new heat pump. Jay Moody was the most honest — they told me what I actually needed, not the most expensive option. Installed perfectly.', date: '2 months ago', source: 'google' },
+  { name: 'Mike R.', rating: 5, text: 'Got three quotes for a new heat pump. Healthy Air HVAC was the most honest — they told me what I actually needed, not the most expensive option. Installed perfectly.', date: '2 months ago', source: 'google' },
   { name: 'Karen T.', rating: 5, text: 'Annual tune-up service is worth every penny. Technician was thorough, polite, and left the area spotless. Our system runs better than it has in years.', date: '1 month ago', source: 'google' },
   { name: 'David H.', rating: 5, text: 'Had them install a mini-split in our addition. Perfect job, cleaned up everything, and the Mass Save® rebate process was easier than expected because they handled the paperwork.', date: '3 months ago', source: 'google' },
 ];

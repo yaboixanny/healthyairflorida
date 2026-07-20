@@ -49,4 +49,8 @@ faq:
     a: "Yes. We offer same-day AC repair service throughout Naples whenever scheduling allows."
   - q: "What AC issues do you repair?"
     a: "We repair common issues including AC not cooling, poor airflow, refrigerant problems, water leaks, unusual noises, and thermostat-related failures."
+  - q: "Can you repair my AC if it keeps turning on and off?"
+    a: "Yes. Short cycling can be caused by thermostat issues, airflow restrictions, electrical problems, or system sizing concerns, and we can diagnose what’s behind it."
+  - q: "Do you work on newer high-efficiency AC systems?"
+    a: "Yes. We service both standard and high-efficiency residential AC systems from all major brands."
 ---

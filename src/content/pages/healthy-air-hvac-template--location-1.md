@@ -31,4 +31,8 @@ faq:
     a: "Yes — [City] is one of our primary service areas. We have technicians in the area daily and can often schedule same-day service."
   - q: "How quickly can you get to [City]?"
     a: "We serve [City] regularly and can typically offer same-day or next-day appointments."
+  - q: "Do you work on all major [trade] systems in [City]?"
+    a: "Yes. We work on all major residential systems and provide honest recommendations based on the condition of your equipment."
+  - q: "Can you provide upfront pricing before work begins?"
+    a: "Yes. We explain your options clearly and provide pricing before any approved work starts."
 ---
