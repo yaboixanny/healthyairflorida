@@ -766,7 +766,7 @@ const townName = (isLocation || isService || isServiceSEO) && slugParts.length >
       <button class="coupon-close-btn" id="coupon-close" aria-label="Dismiss offer">
         <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
-      <a href={`tel:${pagePhone.replace(/\D/g, '')}`} class="coupon-ticket-inner">
+      <a href={`tel:${pagePhone.replace(/\D/g, '')}`} class="coupon-ticket-inner" id="fixed-coupon-link">
         <svg class="scissors-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
         <span class="coupon-text" set:html={data.promoStamp.replace(/\|/g, '<br><span class="coupon-highlight">')} />
         {data.couponExpiry && <p class="coupon-fine-print">{data.couponExpiry}</p>}
@@ -912,6 +912,7 @@ const townName = (isLocation || isService || isServiceSEO) && slugParts.length >
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const fixedCoupon = document.getElementById('fixed-coupon');
+    const fixedCouponLink = document.getElementById('fixed-coupon-link');
     const closeBtn    = document.getElementById('coupon-close');
     if (!fixedCoupon) return;
 
@@ -937,6 +938,24 @@ const townName = (isLocation || isService || isServiceSEO) && slugParts.length >
         fixedCoupon.style.transform = 'translateY(12px) scale(0.9)';
         setTimeout(() => fixedCoupon.style.display = 'none', 260);
         sessionStorage.setItem('couponDismissed', '1');
+      });
+    }
+
+    // On desktop, use the scroll-follower coupon as a form shortcut instead of a phone link.
+    if (fixedCouponLink) {
+      fixedCouponLink.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) return;
+
+        const formTarget =
+          document.getElementById('cta-section')
+          || document.getElementById('cta')
+          || document.querySelector('form');
+
+        if (!formTarget) return;
+
+        e.preventDefault();
+        const top = formTarget.getBoundingClientRect().top + window.scrollY - 88;
+        window.scrollTo({ top, behavior: 'smooth' });
       });
     }
   });
