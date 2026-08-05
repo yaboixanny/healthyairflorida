@@ -50,10 +50,8 @@ export async function getStaticPaths() {
     const hubSlug = page.data.formId?.replace('contact-form-', '') || page.data.contactLocation;
     const citySlug = page.data.locationSlug;
 
-    // URL priority: hub/city if both exist, otherwise just hub
-    const locationSlug = (citySlug && citySlug !== hubSlug)
-      ? `${hubSlug}/${citySlug}`
-      : hubSlug;
+    // A page-level locationSlug should produce the public-facing route directly.
+    const locationSlug = citySlug || hubSlug;
 
     return {
       params: { 
