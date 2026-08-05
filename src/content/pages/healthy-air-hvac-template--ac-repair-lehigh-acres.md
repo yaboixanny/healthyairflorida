@@ -43,21 +43,6 @@ symptoms:
   - title: "AC Keeps Turning On and Off"
     desc: "Short cycling can increase wear on the system and may be tied to thermostat issues, dirty coils, or electrical faults."
 
-recentActivityHeading: "Recent AC Repair Calls Near Lehigh Acres"
-recentActivity:
-  - serviceType: "Emergency AC Repair"
-    location: "Westminster"
-    zipCode: "33973"
-    timeAgo: "Today"
-  - serviceType: "AC Not Cooling Diagnosis"
-    location: "Sunshine"
-    zipCode: "33971"
-    timeAgo: "2 hours ago"
-  - serviceType: "Air Handler Repair"
-    location: "Mirror Lakes"
-    zipCode: "33974"
-    timeAgo: "This morning"
-
 processHeading: "Our Hassle-Free AC Repair Process in Lehigh Acres"
 processSteps:
   - title: "1. Call or Request Service"
